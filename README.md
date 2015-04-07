@@ -39,13 +39,15 @@ If the element container is the &lt;body&gt;, then context-queries  works identi
 <b>CSS</b>
 
 ```css
+/* General style */
 ul.news li{
 	float:left;
-	width:25%;
 	height:50px;
 }
 
+/* Style depending on context (container width) */
 ul.news.gt769 li{
+	width:25%;
 	background-color:#ffcc00;
 }
 
