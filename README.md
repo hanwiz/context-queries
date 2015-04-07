@@ -33,7 +33,7 @@ If the element container is the &lt;body&gt;, then context-queries  works identi
 	<li>News 3</li>
 	<li>News 4</li>
 	<li>News 5</li>
-<ul>
+</ul>
 ```
 
 <b>CSS</b>
