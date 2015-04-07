@@ -1,2 +1,66 @@
-# context-queries
-Adjusting elements to the context, not to device viewport
+Context-queries
+===============
+
+Context-queries is a light css/javascript solution to dinamically change element style without worrying about element position.
+
+# Why use Context-queries?
+I know, media-queries are standard, but I don't like them. :)
+
+Context-queries works by matching the correct css style depending on the container size, not on the device viewport size.
+
+What are the advantages of this approach?
+
+You can easily reuse the same element block (html+css) in many sections of your website (main section, header, sidebar,...).
+No matter if the user will display it via tablet, smartphone, webtv,...
+
+If the element container is the <body>, then context-queries  works identically to media-queries.
+
+# How to
+
+1) 
+1) Insert a "breakpoints" attribute to the element container
+2) Set the value of the attribute with the width to wich you want to change css matching
+3) In css refer to width with "lt" (less than) and "gt" (greater than) keyword classes
+
+
+# Example
+
+```html
+<ul class="news" breakpoint="420 769">
+	<li>News 1</li>
+	<li>News 2</li>
+	<li>News 3</li>
+	<li>News 4</li>
+	<li>News 5</li>
+<ul>
+```
+
+```css
+ul.news li{
+	float:left;
+	width:25%;
+	height:50px;
+}
+
+ul.gt769{
+	background-color:#ffcc00;
+}
+
+ul.lt769 li{
+	width:50%;
+	background-color:#ff0000;
+}
+
+ul.lt420 li{
+	width:100%;
+	background-color:#00ff00;
+}
+```
+
+# Live demo
+	
+
+
+
+
+
