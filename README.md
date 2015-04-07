@@ -46,16 +46,16 @@ ul.news li{
 	height:50px;
 }
 
-ul.gt769 li{
+ul.news.gt769 li{
 	background-color:#ffcc00;
 }
 
-ul.lt769 li{
+ul.news.lt769 li{
 	width:50%;
 	background-color:#ff0000;
 }
 
-ul.lt420 li{
+ul.news.lt420 li{
 	width:100%;
 	background-color:#00ff00;
 }
