@@ -7,14 +7,14 @@ Context-queries is a light css/javascript solution to dinamically change element
 I know, media-queries are standard, but I don't like them. :)
 
 I mean, in a modular responsive website project, <b>the context should be the point</b>, not the media device.
-The design of a news list displayed on a smartphone or on a desktop sidebar is so different?
+The design of a news list displayed on a smartphone viewport or on a desktop sidebar is so different?
 
 Context-queries works by matching the correct css style depending on the container size, not on the device viewport size.
 
 <b>What are the advantages of this approach?</b>
 
-You can easily reuse the same element block (html+css) in many sections of your website (main section, header, sidebar,...).
-No matter if the user will display it via tablet, smartphone, webtv,...
+You can easily reuse the same element block (html+css) in many sections of your website (main, header, sidebar,...).
+No matter if the user will display it via tablet, smartphone, web-tv,...
 
 If the element container is the &lt;body&gt;, then context-queries  works identically to media-queries.
 
@@ -63,4 +63,3 @@ ul.news.lt420 li{
 
 # Live demo
 [http://www.moloc.net/CONTEXT-QUERIES/]
-	
