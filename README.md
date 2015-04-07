@@ -13,7 +13,7 @@ What are the advantages of this approach?
 You can easily reuse the same element block (html+css) in many sections of your website (main section, header, sidebar,...).
 No matter if the user will display it via tablet, smartphone, webtv,...
 
-If the element container is the <body>, then context-queries  works identically to media-queries.
+If the element container is the &lt;body&gt;, then context-queries  works identically to media-queries.
 
 # How to
 
