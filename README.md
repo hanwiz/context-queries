@@ -27,7 +27,7 @@ If the element container is the &lt;body&gt;, then context-queries  works identi
 <b>HTML</b>
 
 ```html
-<ul class="news" breakpoint="420 769">
+<ul class="news" breakpoints="420 769">
 	<li>News 1</li>
 	<li>News 2</li>
 	<li>News 3</li>
