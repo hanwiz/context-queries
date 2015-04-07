@@ -4,7 +4,7 @@ Context-queries
 Context-queries is a light css/javascript solution to dinamically change elements style without worrying about their position in the layout.
 
 # Why use Context-queries?
-I know, media-queries are standard, but I don't like them. :)
+I know, media-queries are the standard, but I don't like them.......at all. :)
 
 I mean, in a modular responsive website project, <b>the context should be the point</b>, not the media device.<br>
 The designs of a news list displayed on a smartphone viewport or on a desktop sidebar are so different?
