@@ -45,7 +45,7 @@ ul.news li{
 	height:50px;
 }
 
-ul.gt769{
+ul.gt769 li{
 	background-color:#ffcc00;
 }
 
