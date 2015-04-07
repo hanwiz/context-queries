@@ -17,13 +17,14 @@ If the element container is the &lt;body&gt;, then context-queries  works identi
 
 # How to
 
-1) 
-1) Insert a "breakpoints" attribute to the element container
-2) Set the value of the attribute with the width to wich you want to change css matching
-3) In css refer to width with "lt" (less than) and "gt" (greater than) keyword classes
+1) Insert a "breakpoints" attribute to the element container<br>
+2) Set the value of the attribute with the width to wich you want to change css matching<br>
+3) In css refer to width with "lt" (less than) and "gt" (greater than) keyword classes<br>
 
 
 # Example
+
+<b>HTML</b>
 
 ```html
 <ul class="news" breakpoint="420 769">
@@ -34,6 +35,8 @@ If the element container is the &lt;body&gt;, then context-queries  works identi
 	<li>News 5</li>
 <ul>
 ```
+
+<b>CSS</b>
 
 ```css
 ul.news li{
@@ -59,7 +62,6 @@ ul.lt420 li{
 
 # Live demo
 	
-
 
 
 
