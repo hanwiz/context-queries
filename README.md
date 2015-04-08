@@ -20,7 +20,7 @@ If the element container is the &lt;body&gt;, then context-queries  works identi
 
 # How to
 
-1) Include context-queries.js on your site just before &lt;body&gt;<br>
+1) Include context-queries.js on your site just before &lt;/body&gt;<br>
 2) Insert a "breakpoints" attribute to the element container and set the value with the width to which you want to change the css style<br>
 3) In css refer to width with "lt" (less than) and "gt" (greater than) keyword classes<br>
 
