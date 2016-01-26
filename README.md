@@ -22,12 +22,12 @@ If the element container is the &lt;body&gt;, then context-queries  works identi
 
 1) Include context-queries.js on your site just before &lt;/body&gt;<br>
 2) Insert a "breakpoints" attribute to the element container and set the value with the width to which you want to change the css style<br>
-3) In css refer to width with "lt" (less than) and "gt" (greater than) keyword classes<br>
+3) In css refer to width with "eq" (equal to), "lt" (less than) or "gt" (greater than) keyword classes<br>
 
 <b>HTML</b>
 
 ```html
-<ul class="news" breakpoints="420 769">
+<ul class="news" breakpoints="420 768">
 	<li>News 1</li>
 	<li>News 2</li>
 	<li>News 3</li>
@@ -46,12 +46,17 @@ ul.news li{
 }
 
 /* Style depending on context (container width) */
-ul.news.gt769 li{
+ul.news.gt768 li{
+	width:20%;
+	background-color:#00ffcc;
+}
+
+ul.news.eq768 li{
 	width:25%;
 	background-color:#ffcc00;
 }
 
-ul.news.lt769 li{
+ul.news.gt420.lt768 li{
 	width:50%;
 	background-color:#ff0000;
 }
@@ -61,6 +66,3 @@ ul.news.lt420 li{
 	background-color:#00ff00;
 }
 ```
-
-# Live demo
-[http://www.moloc.net/CONTEXT-QUERIES/]
