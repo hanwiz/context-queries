@@ -5,7 +5,7 @@ function context(){
         if(el.getAttribute("class") !== null){
             var classes = el.getAttribute("class").split(" ");
             classes.forEach(function(val) {
-                if (val.substring(0, 2) == "lt" || val.substring(0, 2) == "gt") {
+                if (val.substring(0, 2) == "lt" || val.substring(0, 2) == "gt" || val.substring(0, 2) == "eq") {
                         el.classList.remove(val);
                 }
             });
@@ -17,8 +17,10 @@ function context(){
         breakpoints.forEach(function(val) {
               if (w < parseFloat(val)){
                     el.classList.add("lt" + val);
-              }else{
+              }else if (w > parseFloat(val)){
                     el.classList.add("gt" + val);
+              }else{
+                    el.classList.add("eq" + val);
               }
         });
       
