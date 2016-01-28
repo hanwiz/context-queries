@@ -3,7 +3,7 @@ Context-queries
 
 Context-queries is a light css/javascript solution to dinamically change elements style without worrying about their position in the layout.
 
-# Why use Context-queries?
+## Why use Context-queries?
 I know, media-queries are the standard, but I don't like them.......at all. :)
 
 I mean, in a modular responsive website project, <b>the context should be the point</b>, not the media device.<br>
@@ -18,7 +18,7 @@ No matter if the user will display it via tablet, smartphone, web-tv,...
 
 If the element container is the &lt;body&gt;, then context-queries  works identically to media-queries.
 
-# How to
+## Usage
 
 1) Include context-queries.js on your site just before &lt;/body&gt;<br>
 2) Insert a "breakpoints" attribute to the element container and set the value with the width to which you want to change the css style<br>
