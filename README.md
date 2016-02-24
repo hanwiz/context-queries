@@ -6,12 +6,12 @@ Context-queries is a light css/javascript solution to dinamically change element
 ## Why use Context-queries?
 I know, media-queries are the standard, but I don't like them.......at all. :)
 
-I mean, in a modular responsive website project, <b>the context should be the point</b>, not the media device.<br>
+I mean, in a modular responsive website project, **the context should be the point**, not the media device.<br>
 The designs of a news list displayed on a smartphone viewport or on a desktop sidebar are so different?
 
 Context-queries works by matching the correct css style depending on the container size, not on the device viewport size.
 
-<b>What are the advantages of this approach?</b>
+**What are the advantages of this approach?**
 
 You can easily reuse the same element block (html+css) in many sections of your website (main, header, sidebar,...).
 No matter if the user will display it via tablet, smartphone, web-tv,...
@@ -64,5 +64,21 @@ ul.news.gt420.lt768 li{
 ul.news.lt420 li{
 	width:100%;
 	background-color:#00ff00;
+}
+```
+
+## Responsive Javascript
+Sometimes it's usefull to execute some javascript stuff depending on size of an element.<br>
+With **Context Queries** it becomes super easy:
+
+```
+// Vanilla Javascript
+if(el.classList.contains('lt420')){
+    // do something
+}
+
+// Jquery
+if($(el).hasClass('lt420')){
+    // do something
 }
 ```
