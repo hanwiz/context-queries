@@ -9,6 +9,8 @@ I know, media-queries are the standard, but I don't like them.......at all. :)
 I mean, in a modular responsive website project, **the context should be the point**, not the media device.<br>
 The designs of a news list displayed on a smartphone viewport or on a desktop sidebar are so different?
 
+![context](https://cloud.githubusercontent.com/assets/11831276/13280104/5ea52af6-dadc-11e5-828c-c66cf3dcd821.png)
+
 Context-queries works by matching the correct css style depending on the container size, not on the device viewport size.
 
 **What are the advantages of this approach?**
